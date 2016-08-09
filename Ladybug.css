@@ -1,0 +1,66 @@
+h1{
+
+   text-align: center;
+}
+
+textarea{
+    resize:none;
+    width: 100%;
+    height: 75.4%;
+    border:1px solid white;
+    outline:none;
+}
+# id{
+text-align:center;
+}
+
+
+#output{
+    padding-left: 5px;
+    border: 1px solid white; 
+    
+    height:59.73%; 
+    width:100%;
+}
+#string {
+color:silver;
+text-align: left;
+}
+#columnright{
+    border: 1px solid white; 
+    height: 35.18%;
+    padding-left: 1px;
+    padding-right: 2px ;
+    font-family:'century gothic';
+
+}
+#resources{
+    border:1px solid white;
+    height: 35.18%;
+    padding-left: 10px;
+    font-family:'century gothic';
+}
+@media (min-width: 1500px) {
+    .container-fluid{
+    max-width:1800px;
+    }
+}
+
+font{
+color: white;
+font-family: 'century gothic';
+}
+footer{
+font-family:'century gothic';
+color: white;
+text-align: center;
+}
+/* unvisited link */
+a:link {
+    color: #B8D166;
+}
+
+/* visited link */
+a:visited {
+    color: #93A658;
+}
