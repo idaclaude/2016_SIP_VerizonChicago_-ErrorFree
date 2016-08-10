@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Ladybug.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script> 
+        <script src="http://www.skulpt.org/static/skulpt.min.js" type="text/javascript"></script> 
+        <script src="http://www.skulpt.org/static/skulpt-stdlib.js" type="text/javascript"></script>
+        <script src="Windowconditionals.js" type="text/javascript"></script> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="jquery-linedtextarea.js"></script>
+        <script src="debugger.js"></script>
+        <link href="jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
+        <title>LADYBUGGER</title>
+        <link rel="shortcut icon" type="image/x-icon" href="ourlogo.png" />`
+
+    </head>
+    <body style="background-color:#9D341F;">
+        
+        
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <br><br><br><br><br><br><br>
+                    <font color="green"><h3>Console</h3></font>
+                   
+                    <script>
+                        $(function() {
+                            $(".lined").linedtextarea(
+                                {selectedLine: 1}
+                            );
+                        });
+                        
+                    </script>
+                    <textarea placeholder="Type your Python code here" onchange="checker()" class="lined" id="yourcode" cols="100%" rows="100%" style="background-color:white;"></textarea> 
+                 
+                </div>
+                <div class="col-md-4">
+                <h1><img id="logo" src="ladybugger logo.png" style="width:483px;height:313px;" usemap="#planetmap" ><map name="planetmap">
+                <area id="button" type="button" name="Run" onclick= "runit()" shape="circle" coords="190,216,60"></h1>
+                <div id="container">
+                    <div id="logo"></div>
+                    <div id="myimage"></div>
+                </div>
+                    <!--<form>
+                    <br><br><br><p><input id="button" type="button" name="Run" onclick= "runit()" ></p>
+                    </form>
+                    !-->
+                    <font ><h3>Terminal</h3></font>
+                    <pre id="output" style="background-color:white;"><p id="string">Click the ladybug to run your code</p></pre>
+                </div>
+               
+                <div class="col-md-4">
+                    <br><br><br><br><br><br><br><br>
+                    <font color="green"><h3>Debugger</h3></font>
+                    <div id="columnright" style="background-color:white;"></div>
+                </div>
+                <div  class="col-md-4">
+                    <font color="green"><h3>Resources</h3></font><div id="resources" style="background-color:white;"><br>Need more help? Check out these websites!<br><a href="http://www.w3resource.com/python/python-tutorial.php" target="_blank">w3resource</a> <br> <a href="http://www.fullstackpython.com/table-of-contents.html" target="_blank"> Full Stack Python </a> <br> <a href="http://www.tutorialspoint.com/python/" target="_blank"> Tutorials Point </a> <br>
+                    <br> Download Python here: <br><a href="http://www.python.org" target="_blank">Python</a><br>
+                    <br> Learn Python from these websites: <br> <a href="https://www.codecademy.com/learn/python" target="blank">Code Academy</a><br><a href="https://www.pythonanywhere.com" target="_blank">Pythonanywhere</a><br>
+                    <br> Here are some forums to ask questions: <br> <a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a><br> <a href="https://www.reddit.com/r/learnpython" target="_blank"> Reddit</a> <br>
+                    <br> Don't know what to code? Check out <a href="http://www.projecteuler.net" target="_blank"> Project Euler</a> <br>
+                    
+                    </div>  
+                </div>
+                <div id="mycanvas"></div>
+       </div>
+        </div>
+        <footer>
+  <p> <a href="aboutus.html">Chiang & Claude </a>&bull; <a href="about.html">About </a> &bull;<a href="license.html"> MIT License</a> </p>
+</footer>
+
+    </body>
+</html>
