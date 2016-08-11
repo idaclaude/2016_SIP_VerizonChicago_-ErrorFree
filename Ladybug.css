@@ -5,6 +5,8 @@ h1{
 textarea{
     resize:none;
     width: 100%;
+    min-height: 600px;
+    max-height:830px;
     border:1px solid white;
     outline:none;
 }
@@ -39,11 +41,7 @@ text-align: left;
     max-width:1800px;
     }
 }
-#leftcolumn (min-height: 600px) {
-   .container-fluid{
-   max-height:830px;
-   }
-}
+
 #middlecolumn (min-height: 430px) {
   .container-fluid{
     max-height:660px;
